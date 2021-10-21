@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Breweries API</title>
+	<style type="text/css">
+		h1{
+			border: 2px solid;
+			text-align: center;
+			background-color: yellow;
+			padding-top: 5%; 
+			padding-bottom: 5%; 
+		}
+		#name,#type,#phone,#addr{
+			width:15%;
+			border: 2px solid black;
+			padding: 10px;
+		}
+		div{
+			display: block;
+		}
+		div label{
+			display: block;
+		}
+		label,.note{
+			display: inline-block;
+		}
+	</style>
+	<script type="text/javascript" src='script.js'></script>
+</head>
+<body>
+	<div>
+		<h1>Breweries Home</h1>
+	</div>
+	<div>
+			<div>
+				<label><p>NAME: </p></label>
+				<input type="text" id="name" placeholder="Search by Epidemic Ales">
+			</div>
+			<div>
+				<label><p>Type: </p></label>
+				<input type="text" id="type" placeholder="Search by regional,micro">
+			</div>
+			<div>
+				<label><p>Phone: </p></label>
+				<input type="text" id="phone" placeholder="Search by 9255668850">
+			</div>
+			<div>
+				<label><p>Address: </p></label>
+				<input type="text" id="addr" placeholder="Search by address">
+			</div>
+			<div>
+				<label><p>Brewery Result :</p></label>
+				<h3 id="breweryData"></h3>
+			</div>
+			<div>
+				<br>
+				<button onclick="display()">Display</button>
+			</div>
+	</div>
+</body>
+</html>
